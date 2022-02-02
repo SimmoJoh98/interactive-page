@@ -21,7 +21,7 @@ function addMovie(event){
 }
 function deleteMovie(event){
     event.target.parentNode.remove()
-    message.textContent = `${event.target.parentNode.textContent} Deleted!`
+    message.textContent = `${event.target.parentNode.firstChild.textContent} Deleted!`
     revealMessage()
 }
 
